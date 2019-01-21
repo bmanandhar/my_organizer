@@ -1,0 +1,81 @@
+body {
+    background-color: black;
+    width: auto;
+    height: auto;
+  }
+  
+  h5 {
+    color: #0066ff;
+    font-style: oblique;
+  }
+  .line {
+      color: gold;
+  }
+  
+  .middle {
+    color: yellow;
+    font-style: italic;
+  }
+  
+  #bottom {
+      color: orange;
+  }
+  
+  img {
+      border-radius: 15px;
+      background: green;
+      padding: 2px;
+      width: 350px;
+      height: 150px;
+  }
+  
+  #newQuote {
+      background-color: yellow;
+  }
+  
+  .quotes {
+    width: 350px;
+    height: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    border-color: red;
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    color: #80bfff;
+  }
+  
+  .quote {
+    font-family: Times New Roman;
+  }
+  
+  .author {
+    color: #8db618;
+    font-style: italic;
+    font-size: 15px;
+  }
+  
+  .link {
+      color: #ccff33;
+  }
+  
+  .share {
+    text-align: left;
+  }
+  
+  .tweet {
+      background-color: #00ff00;
+  }
+  
+  .facebook {   
+    background-color: #ff6600;
+  }
+  
+  .weather {
+      background-color: grey;
+
+  }
+  footer {
+    color: rgb(255, 165, 0);
+  }
