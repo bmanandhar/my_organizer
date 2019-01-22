@@ -1,13 +1,12 @@
 $(document).ready(function(){
-    //Variables declared
-    var quote, author, link;
-    //Function declaration  
-    function getQuote(){
+  //Variables declared
+  var quote, author, link;
+  //Function declaration  
+  function getQuote(){
     var url= "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
      
     //API call using Json GET method, instruction given
-    $.getJSON(url, function(data){
-      
+    $.getJSON(url, function(data){  
       console.log("Bijaya's Organizer");
       console.log(typeof data);
       console.log("Type of data");
@@ -28,14 +27,13 @@ $(document).ready(function(){
     });
   };
     
-      $(".tweet").on("click", function(){
+      $("#tweet").on("click", function(){
       window.open("https://twitter.com/intent/tweet?text="+quote+"   - "+author);
       });
       console.log(quote+' - '+author);
       $(".facebook").on("click", function(){
-      window.open("https://www.facebook.com/sharer/sharer.php?u="+ link);
+        window.open("https://www.facebook.com/sharer/sharer.php?u="+ link);
     });
-
     $(".quote").on("click", function(){   
         getQuote();
     });
