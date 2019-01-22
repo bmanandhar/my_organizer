@@ -1,22 +1,35 @@
 body {
-    background-color: #3b80ef;
+    background-color: grey;
+    width: auto;
+    height: auto;
   }
   
   .container {
     text-align: center;
   }
   
+  header {
+    height: 35px;
+    background-color: yellow;
+  }
   .inner-container {
     width: 350px;
+    width: 350px;
+    height: auto;
+    margin: 2px;
+    border: 1px solid yellow;
+    padding: 3px;
     text-align: left;
     border-radius: 5px;
-    background-color: black;
-    color: white;
-    margin: 20px;
-    padding: 20px; 
+    margin: 2px 0 0 10px; 
+  }
+
+  .home-btn {
+    background-color: yellow;
+
   }
   
-  .btn {
+  .cf-btn {
     float: right;
     background-color: green;
   }

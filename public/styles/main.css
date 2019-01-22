@@ -2,10 +2,13 @@ body {
     background-color: black;
     width: auto;
     height: auto;
+    margin: 1px;
+    border: 1px solid yellow;
+    margin: 2px;
   }
   
   h5 {
-    color: #0066ff;
+    color: cornsilk;
     font-style: oblique;
   }
   .line {
