@@ -4,74 +4,88 @@ body {
 }
 
 .container {
-    background-color: black;
-    width: 380px;
-    height: 550px;
-    margin: 1px;
-    border: 1px solid yellow;
-    margin: 2px;
-  }
+  text-align: center;
+  background-color: black;
+  width: 380px;
+  height: 550px;
+  margin: 1px;
+  border: 1px solid yellow;
+  margin: 2px;
+}
   
-  h5 {
-    color: cornsilk;
-    font-style: oblique;
+h5 {
+  color: cornsilk;
+  font-style: oblique;
+}
+
+.email-content {
+  width: 350px;
+  height: 200px;
+  background-color: white;
+  width: 350px;
+  height: 150px;
+  margin-right: auto;
+  margin-left: auto;
   }
 
-  .email-content {
-    width: 350px;
-    height: 200px;
-    background-color: white;
-    width: 350px;
-    height: 150px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+/* #bottom {
+  color: orange;
+} */
 
-  #bottom {
-      color: orange;
-  }
+.quotes {
+  width: 350px;
+  height: 150px;
+  border-color: red;
+  border-style: solid;
+  border-radius: 2px;
+  margin-top: 5px;
+  padding: 5px;
+  color: #80bfff;
+}
+  
+.quote {
+  font-family: Times New Roman;
+}
+  
+.author {
+  color: #8db618;
+  font-style: italic;
+  font-size: 15px;
+}
+  
+.link {
+  color: #ccff33;
+}
+  
+.share {
+  text-align: left;
+}
+  
+.tweet {
+  background-color: #00ff00;
+}
+  
+.facebook {   
+  background-color: #ff6600;
+}
+.news{
+  background-color: #34B3E8;
+}
 
-  .quotes {
-    width: 350px;
-    height: 150px;
-    border-color: red;
-    border-style: solid;
-    border-radius: 2px;
-    margin-top: 5px;
-    padding: 5px;
-    color: #80bfff;
-  }
-  
-  .quote {
-    font-family: Times New Roman;
-  }
-  
-  .author {
-    color: #8db618;
-    font-style: italic;
-    font-size: 15px;
-  }
-  
-  .link {
-    color: #ccff33;
-  }
-  
-  .share {
-    text-align: left;
-  }
-  
-  .tweet {
-      background-color: #00ff00;
-  }
-  
-  .facebook {   
-    background-color: #ff6600;
-  }
-  
-  .weather {
-      background-color: grey;
+.map {
+  background-color: #E41616;
+}
 
-  }
-  footer {
-    color: rgb(255, 165, 0);
-  }
+.phone {
+  background-color: #FFFFFF;
+}
+.transit {
+  background-color: #FFFF74;
+}
+  
+.weather {
+    background-color: grey;
+}
+footer {
+  color: rgb(255, 165, 0);
+}
