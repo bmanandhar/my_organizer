@@ -27,16 +27,14 @@ $(document).ready(function(){
     });
   };
     
-      $("#tweeter").on("click", function(){
+      $(".tweet").on("click", function(){
       window.open("https://twitter.com/intent/tweet?text="+quote+"   - "+author);
       });
       console.log(quote+' - '+author);
       $(".facebook").on("click", function(){
-        window.open("https://www.facebook.com/sharer/sharer.php?u="+link);
+        window.open("https://www.facebook.com/sharer/sharer.php?u="+ link);
     });
     $(".quote").on("click", function(){   
         getQuote();
-    });
-    
+    }); 
   });
-  
