@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  getQuote()
+});
   //Variables declared
   var quote, author, link;
   //Function declaration  
@@ -7,6 +9,8 @@ $(document).ready(function(){
      
     //API call using Json GET method, instruction given
     $.getJSON(url, function(data){  
+
+      //logs data on console
       console.log("Bijaya's Organizer");
       console.log(typeof data);
       console.log("Type of data");
@@ -23,7 +27,7 @@ $(document).ready(function(){
       }
       $(".quote").html('"'+quote+'"');
       $(".author").html("-"+author);
-      $(".link").html(link);
+      console.log(link);
     });
   };
     
@@ -37,4 +41,4 @@ $(document).ready(function(){
     $(".quote").on("click", function(){   
         getQuote();
     }); 
-  });
+  // });

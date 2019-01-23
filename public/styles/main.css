@@ -26,25 +26,32 @@ h5 {
   margin: auto;
   }
 
-.quotes {
+.quote-box {
+  display:flex;
+  flex-direction:column-reverse;
+  width: 350px;
+  height: 160px;
   border-color: red;
   border-style: solid;
   border-radius: 2px;
-  margin-top: 5px; */
-  padding: 5px;
+  margin-top: 5px; 
+  padding: 2px;
   color: #80bfff;
 }
-  
+
 .quote {
   font-family: Times New Roman;
-}
-  
+} 
+
 .author {
   color: #8db618;
   font-style: italic;
   font-size: 15px;
 }
   
+.post {
+  align-self: flex-end;
+} 
 .link {
   color: #ccff33;
 }
@@ -52,14 +59,7 @@ h5 {
 .share {
   text-align: left;
 }
-  
-.tweet {
-  background-color: #00ff00;
-}
-  
-.facebook {   
-  background-color: #ff6600;
-}
+
 .news{
   background-color: #34B3E8;
 }
