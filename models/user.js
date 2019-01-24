@@ -1,13 +1,21 @@
-const mongoose = require('mongoose'),
-    Schema = mongoose.Schema;
+const mongoose = require('mongoose');
 
-const UserSchema = new Schema({
-    firstName: String,
-    lastName: String,
-    email: String,
-    passWord: Striing
-});
+const userSchema = mongoose.Schema({
+  email: { 
+    type: String, 
+    required: true, 
+    unique: true, 
+    match: /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/ ,
+    },
+  password: { type: String, required: true , select: false}
 
-const Todo = mongoose.model('User', UserSchema);
+})
 
-module.exports = User;
+userSchema.set('toJSON', {
+  transform: function(doc, ret, opt) {
+      delete ret['password']
+      return ret
+  }
+})
+
+module.exports = mongoose.model('User', userSchema);

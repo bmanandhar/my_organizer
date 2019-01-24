@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
-const User = require('./user');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/organizer', { useNewUrlParser: true } );
 
 // models/index.js
 // require runs the code from the given file and returns its exports
-const T = require('./user');
+const User = require('./user');
 // NEW LINE:
 exports.User = User;
