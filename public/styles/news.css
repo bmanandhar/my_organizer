@@ -1,0 +1,9 @@
+.news-content {
+    width: 380px;
+    height: 550px;
+    margin: 1px;
+    border: 1px solid green;
+    padding: 3px;
+    background-color: lightyellow;
+    overflow: scroll;
+}

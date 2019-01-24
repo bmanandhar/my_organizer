@@ -1,4 +1,5 @@
-/* .container {
+.container {
     width: 380px;
-    width: 500px;
-} */
+    width: 550px;
+    overflow: scroll;
+} 
