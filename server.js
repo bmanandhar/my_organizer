@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 app.use(express.static('public'));
 app.use(express.static('views'));
-const port = 3000;
 const bodyParser = require('body-parser')
 const jwt = require('jsonwebtoken')
 const userRoutes = require('./routes/user')
+const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

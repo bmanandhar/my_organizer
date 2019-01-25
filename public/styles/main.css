@@ -1,18 +1,22 @@
 body {
   background-color: grey;
-  text-align: center;
   margin: 5px;
   padding: 5px;
+  text-align: center;
 }
 
 .container {
   text-align: center;
   background-color: black;
-  width: 380px;
-  height: 550px; */
+  width: 400px;
+  height: 600px;  
   margin: 1px;
   border: 1px solid yellow;
+}
 
+header {
+  display: flex;
+  color: cornsilk;
 }
   
 h5 {
@@ -24,19 +28,71 @@ h5 {
   background-color: white;
   float: center;
   width: 350px;
-  height: 250px; */
+  height: 250px;
   margin: auto;
-  }
+}
 
-  .photo {
-    width: 340px;
-    height: 250px;
-  }
+.photo {
+  width: 340px;
+  height: 250px;
+}
+
+/* .sign-up-form {
+  display:flex;
+  flex-direction:column;
+  text-align: right;
+  width: 350px;
+  height: 160px;
+  background-color: green;
+  border-color: red;
+  border-style: solid;
+  border-radius: 2px;
+  margin-top: 5px; 
+  padding: 2px;
+  color: #80bfff;
+  display: none;
+} */
+
+/* .sign-in-form {
+  display:flex;
+  flex-direction:column;
+  text-align: right;
+  width: 350px;
+  height: 160px;
+  background-color: green;
+  border-color: red;
+  border-style: solid;
+  border-radius: 2px;
+  margin-top: 5px; 
+  padding: 2px;
+  color: #80bfff;
+  display: none;
+} */
+
+/* .clearfix {
+  display: flex;
+  flex-direction: row-reverse;
+} */
+
+/* .signIn{
+  display:flex;
+  flex-direction:column-reverse;
+  text-align: center;
+  width: 350px;
+  height: 160px;
+  background-color: green;
+  border-color: red;
+  border-style: solid;
+  border-radius: 2px;
+  margin-top: 5px; 
+  padding: 2px;
+  color: #80bfff;
+} */
 
 .quote-box {
   display:flex;
   flex-direction:column-reverse;
-  width: 350px;
+  width: 400px;
   height: 160px;
   border-color: red;
   border-style: solid;
@@ -44,6 +100,7 @@ h5 {
   margin-top: 5px; 
   padding: 2px;
   color: #80bfff;
+  display: none;
 }
 
 .quote {

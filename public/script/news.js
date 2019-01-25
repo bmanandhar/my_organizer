@@ -16,7 +16,7 @@ $(document).ready(function(){
         for (let i=0; i<length; i++) {
             $('.news-content').append(`
                 <p>${all_news[i].publishedAt}</p>
-                <p>${all_news[i].source.name}</P>
+                <p>Source: ${all_news[i].source.name}</P>
                 <p>${all_news[i].content}</p>
                 <hr>`
             )

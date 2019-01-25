@@ -1,12 +1,21 @@
 body {
-    background-color: grey;
-    width: auto;
-    height: auto;
-  }
-  
+  background-color: grey;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
   .container {
     text-align: center;
   }
+  .container {
+    text-align: center;
+    /* background-color: black; */
+    width: 400px;
+    height: 600px;  
+    margin: 1px;
+    border: 1px solid yellow;
+  }
+
   
   header {
     height: 35px;
@@ -14,10 +23,9 @@ body {
   }
   .inner-container {
     width: 350px;
-    width: 350px;
+    height: 550px;
     height: auto;
-    margin: 2px;
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     padding: 3px;
     text-align: left;
     border-radius: 5px;

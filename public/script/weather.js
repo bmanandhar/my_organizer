@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var api_key = "8f236e524e673e139b0f6739b81a6eb4";
 //    var openWeatherMap; on Toggle, trying to replace data by metric units available on the api url,
-    var ipInfo = "https://ipinfo.io";
+    var ipInfo = `https://ipinfo.io`;
     var imperial = "https://api.openweathermap.org/data/2.5/weather?units=imperial&lat=";
     var metric = "http://api.openweathermap.org/data/2.5/weather?units=metric&lat=";
     var celsius = false;
@@ -11,6 +11,7 @@ $(document).ready(function(){
     }
 
     function cityWeather(data, celsius){
+        console.log(`ipInfo`);
         console.log(data);
         var temp = result(data.main.temp, celsius);
         var max = result(data.main.temp_max, celsius);

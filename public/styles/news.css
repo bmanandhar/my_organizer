@@ -1,9 +1,29 @@
-.news-content {
+body {
+    background-color: grey;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .container {
+    /* text-align: center; */
+    background-color: black;
     width: 380px;
-    height: 550px;
+    height: 550px; 
+    margin: 1px;
+    border: 1px solid yellow;
+  
+  }
+
+.news-room {
+    text-decoration: underline;
+}
+
+.news-content {
+    height: 500px;
     margin: 1px;
     border: 1px solid green;
-    padding: 3px;
+    padding: 1px;
     background-color: lightyellow;
     overflow: scroll;
 }
