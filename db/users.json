@@ -1,0 +1,14 @@
+[
+    {
+        "email": "test1@ga.com",
+        "password": "$2b$10$vsyBxHQNIhiR8LN9.U8gY.B3qMKcGS7AHstV6uWgxQkAhsN5uZ7Iy"
+    },
+    {
+        "email": "test2@ga.com",
+        "password": "$2b$10$vsyBxHQNIhiR8LN9.U8gY.B3qMKcGS7AHstV6uWgxQkAhsN5uZ7Iy"
+    },
+    {
+        "email": "test3@ga.com",
+        "password": "$2b$10$vsyBxHQNIhiR8LN9.U8gY.B3qMKcGS7AHstV6uWgxQkAhsN5uZ7Iy"
+    }
+]

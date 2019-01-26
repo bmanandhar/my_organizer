@@ -1,0 +1,32 @@
+body {
+    background-color: gray; 
+    margin: 2px;
+    padding: 2px;
+    text-align: center;
+  }
+
+  .container {
+    text-align: center;
+  }
+  
+  header {
+    padding-top: 10px;
+    height: 100px;
+    border: 2px solid yellowgreen;
+  }
+
+  .main {
+    text-align: center;
+  }
+
+  .sign-in-form {
+    height: 300px;
+    width: 400px;
+    text-align: center;
+    background-color: green;
+
+  }
+
+  .sign-in-form {
+    
+  }
