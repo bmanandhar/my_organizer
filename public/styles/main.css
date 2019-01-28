@@ -1,15 +1,11 @@
 body {
-  background-color: grey;
-  margin: 5px;
-  padding: 5px;
+  margin: 1px;
+  padding: 1px;
   text-align: center;
 }
 
 .container {
-  text-align: center;
   background-color: black;
-  width: 400px;
-  height: 600px;  
   margin: 1px;
   border: 1px solid yellow;
 }
@@ -22,19 +18,6 @@ header {
 h5 {
   color: cornsilk;
   font-style: oblique;
-}
-
-.email-content {
-  background-color: white;
-  float: center;
-  width: 350px;
-  height: 250px;
-  margin: auto;
-}
-
-.photo {
-  width: 340px;
-  height: 250px;
 }
 
 /* .sign-up-form {
@@ -92,7 +75,7 @@ h5 {
 .quote-box {
   display:flex;
   flex-direction:column-reverse;
-  width: 400px;
+  /* width: 400px; */
   height: 160px;
   border-color: red;
   border-style: solid;

@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     const url = 'https://newsapi.org/v2/top-headlines?'+
                 'country=us&'+
@@ -18,7 +17,7 @@ $(document).ready(function(){
                 <p>${all_news[i].publishedAt}</p>
                 <p>Source: ${all_news[i].source.name}</P>
                 <p>${all_news[i].content}</p>
-                <hr>`
+                <p>- - - - - - -</p>`
             )
         }
     })
