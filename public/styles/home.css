@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  background-color: black;
+  background-color:;
   margin: 1px;
   border: 1px solid yellow;
 }
@@ -82,24 +82,25 @@ h5 {
   border-radius: 2px;
   margin-top: 5px; 
   padding: 2px;
-  color: #80bfff;
+  /* color: #80bfff; */
 }
 
 .quote {
   font-family: Times New Roman;
+  font-size: 20px;
 } 
 
 .author {
   color: #8db618;
   font-style: italic;
-  font-size: 15px;
+  /* font-size: 15px; */
 }
   
 .post {
   align-self: flex-end;
 } 
 .link {
-  color: #ccff33;
+  color: blue;
 }
   
 .share {
@@ -123,4 +124,8 @@ h5 {
   
 .weather {
     background-color: grey;
+}
+
+.ipinfo {
+  background-color: purple;
 }

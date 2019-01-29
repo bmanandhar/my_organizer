@@ -6,3 +6,9 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/organizer', { u
 const User = require('./user');
 // NEW LINE:
 exports.User = User;
+
+module.exports.User = require('./user')
+
+module.exports.Quote = require("./quote.js");
+
+mongoose.connect("mongodb://localhost:3000/home"); 

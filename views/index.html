@@ -9,6 +9,8 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/app.js" defer></script>
+    <!-- <link rel="stylesheet" href="styles/styles.css"> -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <!--Google O Auth2 signIn
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -16,6 +18,58 @@
     -->
 
 </head>
+
+<body>
+    <div class="row">
+    <div class="col-md-12">
+        <div id="access">
+            <div id="noToken" class="show">
+              <a id="login" href="#">Log In</a> | 
+              <a id="signup" href="#">Sign Up</a>
+            </div>
+            <div id="yesToken" class="show">
+              <a id="logout" href="#">Log Out</a>
+            </div>
+        </div>
+        <p id="message"></p>
+      
+        <form id="loginForm" class="show">
+          <p>Login</p>
+          <div>
+            <label for="loginEmail">Email</label>
+            <input id="loginEmail" type="text" name="email"/>
+          </div>
+          <div>
+            <label for="loginPassword">Password</label>
+            <input id="loginPassword" type="password" name="password"/>
+          </div>
+          <div>
+            <input type="submit" />
+          </div>
+        </form>
+      
+        <form id="signupForm" class="show">
+          <p>Signup</p>
+            <div>
+              <label for="singupEmail">Email</label>
+              <input id="singupEmail" type="text" name="email"/>
+            </div>
+            <div>
+              <label for="signupPassword">Passord</label>
+              <input id="signupPassword" type="password" name="password"/>
+            </div>
+            <div>
+              <input type="submit" />
+            </div>
+          </form>
+    </div>
+      </div>
+      </body>
+      </html>
+
+
+
+<!--
 <body>
     <div class="container">
         <div class="row">
@@ -71,6 +125,6 @@
             </div>
         </div>
     </div>
-    <script src="script/index.js" type="text/javascript"></script>
 </body>
 </html>
+-->

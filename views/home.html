@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/home.css">
 
     <!--Google O Auth2 signIn
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -20,20 +20,22 @@
 </head>
 <body>
     <div class="container">
+        <div class="col-md-12">
         <header>
             <h1>Organizer</h1>            
         </header>
-        <div>
+        </div>
+        <div class="col-md-12">
             <div class="quote-box">
                 <div class="post">
                     <span>{Click for new quote}</span>
-                    <span style="color:yellow">Post to:</span>
+                    <span style="color:blue">Post to:</span>
                     <span href="#" class="facebook">Fbook/</span>
                     <span href="#" class="tweet">Tweet</span> 
                 </div>
                 <div class="quotes">
-                    <span class="quote"></span><br/>
-                    <span class="author"></span>
+                    <span class="quote" method="post" action="/quote"></span><br/>
+                    <span class="author" method="post" action="/author"></span>
                 </div>
             </div> 
             <br>
@@ -43,16 +45,20 @@
                 </a>
                 <a href="map.html">
                     <button class="btn btn-sm map" type="submit" id="map">Map</button>
-                </a><script src="script/app.js" type="text/javascript"></script>
+                </a><script src="scripts/index.js" type="text/javascript"></script>
                 <button href="#" class="btn btn-sm phone" type="submit" id="phone">Phone</button> 
                 <button href="#" class="btn btn-sm transit" type="submit" id="transit">Transit</button>
                 <a href="weather.html">
                     <button class="btn btn-sm weather" type="submit" id="weather">Weather</button>
                 </a>
+                <a href="ipinfo.html">
+                    <button class="btn btn-sm ipinfo" type="submit" id="ipinfo">IP Info</button>
+                </a>
             </div>
         </div><br>  
-        <h6>My Organizer</h6>
-    </div>
+        <!-- <h6>My Organizer</h6> -->
+        </div>
+    <!-- </div> -->
      
 </body>
 </html>

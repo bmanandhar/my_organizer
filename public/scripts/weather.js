@@ -28,7 +28,6 @@ $(document).ready(function(){
         $(".wind-speed").html("Wind speed: " + data.wind.speed + "mile/hr");
         $(".wind-dir").html("Wind direction: " + data.wind.deg + "&#176");
         $(".temp").prepend("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
-        $(".time").html(now);
     }
 
     $(function(){
@@ -50,7 +49,15 @@ $(document).ready(function(){
         })    
     })
     var now = new Date();
+    // var nowArray = now.split("");
     console.log(now);
+    // console.log(typeof now);
+    var timestamp = now.getTime()
+    console.log(timestamp);
+    console.log(typeof timestamp);
+
+    // console.log(Object.values(now));
+
     //"Sun Jan 27 2019 20:55:49 GMT-0800 (Pacific Standard Time)"
     
 });
@@ -76,4 +83,14 @@ $.ajax({
         $('#loading').remove();
       }
 });
+*/
+
+/* var ipinfo
+city: "San Francisco"
+country: "US"
+ip: "38.140.30.202"
+loc: "37.7909,-122.4020"
+org: "AS174 Cogent Communications"
+postal: "94104"
+region: "California"
 */

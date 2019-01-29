@@ -13,7 +13,8 @@ $(document).ready(function(){
         console.log(all_news);
 
         for (let i=0; i<length; i++) {
-            $('.news-content').append(`
+            $('.news-content').append(` 
+                <p><b>News# ${i+1}</b></p>
                 <p>${all_news[i].publishedAt}</p>
                 <p>Source: ${all_news[i].source.name}</P>
                 <p>${all_news[i].content}</p>

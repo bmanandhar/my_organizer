@@ -1,6 +1,5 @@
 $(document).ready(function(){
-    getQuote()
-  });
+    getQuote();
     //Variables declared
     var quote, author, link;
     
@@ -41,17 +40,20 @@ $(document).ready(function(){
       });
       $(".quote").on("click", function(){   
           getQuote();
-      }); 
-
-      $(".sign-in").on('click', function() {
-        $.ajax({
-          type: "POST",
-          url: "http://localhost:3000/user/login",
-          data: {
-              "email":"admin1212@admin.com",
-              "password":"testing!"
-          },
-          success: (response) => console.log(response)
-        });
       })
-    
+    });
+/*
+console.log("Sanitation");
+
+$(document).ready(function(){
+    $(".sign-in-btn").on("click",function(){
+        $(".sign-in-form").css("display","block")
+        $(".sign-up-btn").css("display","none")
+    })
+
+    $(".sign-up-btn").on("click",function(){
+        $(".sign-up-form").css("display","block")
+        $(".sign-in-btn").css("display","none")
+    })
+})
+*/
