@@ -12,3 +12,5 @@ module.exports.User = require('./user')
 module.exports.Quote = require("./quote.js");
 
 mongoose.connect("mongodb://localhost:3000/home"); 
+mongoose.connect("mongodb://localhost:3000/news"); 
+mongoose.connect("mongodb://localhost:3000/weather"); 
