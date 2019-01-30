@@ -11,8 +11,7 @@ $(document).ready(function(){
     }
 
     function cityWeather(data, celsius){
-        console.log(`ipInfo`);
-        console.log(data);
+        console.log("Here is data",data);
         var temp = result(data.main.temp, celsius);
         var max = result(data.main.temp_max, celsius);
         var min = result(data.main.temp_min, celsius);
@@ -33,7 +32,7 @@ $(document).ready(function(){
     $(function(){
       
         $.getJSON(ipInfo, function(data){
-            console.log(data);
+            console.log("ipInfo =", data);
             loc = data.loc.split(",");
             city = data.city;
             region = data.region;

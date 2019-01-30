@@ -1,7 +1,5 @@
 $(document).ready(function(){
     getQuote();
-    //Variables declared
-    var quote, author, link;
     
     //Function declaration  
     function getQuote(){
@@ -24,39 +22,38 @@ $(document).ready(function(){
         console.log("-"+author);
       });
     };
-        $(".save-quote").on("click", function() {
-
-            // POST request
-            $.ajax({
-                method: "POST",
-                url: "/quote",
-                data: {
-                    quote: quote,
-                    author: author,
-                    link: link, 
-                    user: localStorage.userId
-                },
-                success: (response) => console.log(response),
-                // error: handleError
-            });
-        })
-        
-
-        /*
-<script type"text/javascript">
-function save(){
+$(".save-quote").on("click", function() {
+    // POST request
     $.ajax({
-        type: "POST",
-        url: "yourpath/yourfile.php",
-        data: {title: title},
-        success: function(data) {
-            alert("Ajax save executed!");
-        }
+        method: "POST",
+        url: "/quote",
+        data: {
+            quote: quote,
+            author: author,
+            link: link, 
+            user: localStorage.userId
+        },
+        success: (response) => console.log(response),
+        // error: handleError
     });
-}
-</script>
-*/
-        $(".tweet").on("click", function(){
+})
+
+$(".delete-quote").on("click", function() {
+    // POST request
+    $.ajax({
+        method: "DELETE",
+        url: "/quote",
+        data: {
+            quote: quote,
+            author: author,
+            link: link, 
+            user: localStorage.userId
+        },
+        success: (response) => console.log(response),
+        // error: handleError
+    });
+})
+     $(".tweet").on("click", function(){
         window.open(`https://twitter.com/intent/tweet?text=${quote} - ${author}`);
         });
         $(".facebook").on("click", function(){

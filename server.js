@@ -24,6 +24,10 @@ app.get('/home', (req, res) => {
   res.sendFile(__dirname + '/views/home.html');
 })
 
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/views/ipinfo.html');
+})
+
 app.post('/verify', verifyToken, (req, res) => {
   let verified= jwt.verify(req.token, 'waffles')
   console.log("verified: ", verified)

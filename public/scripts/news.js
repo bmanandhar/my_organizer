@@ -15,10 +15,10 @@ $(document).ready(function(){
         for (let i=0; i<length; i++) {
             $('.news-content').append(` 
                 <p><b>News# ${i+1}</b></p>
-                <p>${all_news[i].publishedAt}</p>
+                <p>Date published: ${all_news[i].publishedAt}</p>
                 <p>Source: ${all_news[i].source.name}</P>
-                <p>${all_news[i].content}</p>
-                <button class="btn btn-primary save-news">save</button>
+                <p>Content: ${all_news[i].content}</p>
+                <button class="btn btn-primary save-news${i}">save-${i}</button>
                 <p>- - - - - - -</p>`
             )
         }

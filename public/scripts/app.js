@@ -3,7 +3,7 @@ localStorage.length > 0 ? console.log(localStorage) : console.log('no local stor
 let loggedIn ;
 let user ;
 
-checkForLogin();
+// checkForLogin();
 
 $('a#logout').on('click', handleLogout);
 
@@ -19,11 +19,12 @@ $('#loginForm').on('submit', submitLogin)
 function checkForLogin(){
   if(localStorage.length > 0){
     let jwt = localStorage.token
+
     $.ajax({
       type: "POST", //GET, POST, PUT
       url: '/verify',  
       beforeSend: function (xhr) {   
-          xhr.setRequestHeader("Authorization", 'Bearer '+ localStorage.token);
+          xhr.setRequestHeader("Authorization", 'Bearer '+ jwt);
       }
     }).done(function (response) {
       console.log(response)
