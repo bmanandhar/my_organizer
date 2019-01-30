@@ -28,7 +28,7 @@ $(document).ready(function(){
 
             // POST request
             $.ajax({
-                method: 'POST',
+                method: "POST",
                 url: "/quote",
                 data: {
                     quote: quote,
