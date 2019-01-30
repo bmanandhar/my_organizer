@@ -9,17 +9,9 @@ $(document).ready(function(){
        
       //API call using Json GET method, instruction given
       $.getJSON(url, function(data){  
-  
-        //logs data on console
-        console.log("Bijaya's Organizer");
-        console.log(typeof data);
-        console.log("Type of data");
-        console.log(data);
-        
         quote = data.quoteText;
         author = data.quoteAuthor;
         link = data.quoteLink;
-        
         if (data.quoteAuthor) {
           author = data.quoteAuthor;
         } else {
@@ -27,14 +19,46 @@ $(document).ready(function(){
         }
         $(".quote").html('"'+quote+'"');
         $(".author").html("-"+author);
-        console.log(link);
+        console.log('"'+link+'"');
+        console.log('"'+quote+'"');
+        console.log("-"+author);
       });
     };
-      
+        $(".save-quote").on("click", function() {
+
+            // POST request
+            $.ajax({
+                method: 'POST',
+                url: "/quote",
+                data: {
+                    quote: quote,
+                    author: author,
+                    link: link, 
+                    user: localStorage.userId
+                },
+                success: (response) => console.log(response),
+                // error: handleError
+            });
+        })
+        
+
+        /*
+<script type"text/javascript">
+function save(){
+    $.ajax({
+        type: "POST",
+        url: "yourpath/yourfile.php",
+        data: {title: title},
+        success: function(data) {
+            alert("Ajax save executed!");
+        }
+    });
+}
+</script>
+*/
         $(".tweet").on("click", function(){
-        window.open("https://twitter.com/intent/tweet?text="+quote+"   - "+author);
+        window.open(`https://twitter.com/intent/tweet?text=${quote} - ${author}`);
         });
-        console.log(quote+' - '+author);
         $(".facebook").on("click", function(){
           window.open("https://www.facebook.com/sharer/sharer.php?u="+ link);
       });
@@ -42,18 +66,3 @@ $(document).ready(function(){
           getQuote();
       })
     });
-/*
-console.log("Sanitation");
-
-$(document).ready(function(){
-    $(".sign-in-btn").on("click",function(){
-        $(".sign-in-form").css("display","block")
-        $(".sign-up-btn").css("display","none")
-    })
-
-    $(".sign-up-btn").on("click",function(){
-        $(".sign-up-form").css("display","block")
-        $(".sign-in-btn").css("display","none")
-    })
-})
-*/

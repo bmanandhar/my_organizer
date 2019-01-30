@@ -28,6 +28,7 @@ function checkForLogin(){
     }).done(function (response) {
       console.log(response)
       user = { email: response.email, _id: response._id }
+      localStorage.userId = user._id;
       console.log("you can access variable user: " , user)
         $('#message').text(`Welcome, ${ response.email || response.result.email } `);
         window.location.href = "http://localhost:3000/home.html";
@@ -100,6 +101,7 @@ function submitLogin(e){
     console.log("LOG IN SUCCESSFUL")
     console.log(json);
     localStorage.token = json.token;
+    
     $('#noToken').toggleClass('show')
     $('#loginForm').toggleClass('show')
     checkForLogin();

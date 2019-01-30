@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser')
 const userRoutes = require('./routes/user')
 const jwt = require('jsonwebtoken')
+const db = require('./models')
 
 const port = 3000;
 
@@ -83,27 +84,21 @@ function verifyToken(req, res, next) {
 //   });
 // });
 
-var mongoose = require("mongoose");
-mongoose.Promise = global.Promise;
-mongoose.connect("mongodb://localhost:27017/my_organizer");
-
 // app.get("/", (req, res) => {
 //   res.send("Hello World");
 // });
 
-app.use("/", (req, res) => {
-  res.sendFile(__dirname + "/home.html");
-});
+// app.use("/", (req, res) => {
+//   res.sendFile(__dirname + "/home.html");
+// });
 
 app.post("/quote", (req, res) => {
-  var myData = new User(req, body);
-    myData.save()
-    .then(item => {
-      res.send("item saved to database");
-    })
-    .catch(err => {
-      res.status(400).send("unable to save to database");
-    }); 
+  db.Quote.create(req.body, (err,newQuote)=>{
+    if(err){
+      res.json(err)
+    }
+    res.json({newQuote:newQuote})
+  })
 });
 
 

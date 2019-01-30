@@ -18,6 +18,7 @@ $(document).ready(function(){
                 <p>${all_news[i].publishedAt}</p>
                 <p>Source: ${all_news[i].source.name}</P>
                 <p>${all_news[i].content}</p>
+                <button class="btn btn-primary save-news">save</button>
                 <p>- - - - - - -</p>`
             )
         }

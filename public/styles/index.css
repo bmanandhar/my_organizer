@@ -1,4 +1,11 @@
-.container {
+.header {
+  background-color: skyblue;
+  padding-top: 20px;
+  text-align: center;
+  height: 100px;
+}
+
+.main {
   background-image: url("https://images.pexels.com/photos/1020317/pexels-photo-1020317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   text-align: center;
 }
@@ -8,7 +15,7 @@
 }
 
 form {
-  width: 30%;
+  width: 50%;
   line-height: 1.68em;
   text-align: center;
   padding: 2em;
@@ -40,7 +47,7 @@ form {
 }
 
 .sign-up-form {
-  /* display: none; */
+  display: none;
   border: 1px solid yellowgreen;
 
 }
@@ -50,4 +57,3 @@ form {
   flex-direction: column;
   border: 1px solid peru;
 }
-*/

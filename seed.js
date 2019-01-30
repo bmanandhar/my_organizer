@@ -84,7 +84,7 @@ var quote_list = [
     },
 
       {
-        content: "Washington (CNN) Special counsel Robert Mueller's investigation into Russian interference in the 2016 presidential election is "close to being completed," acting Attorney General Matt Whitaker said Monday. Whitaker told reporters he has been "fully briefed" o… [+2493 chars]",          
+        content: `Washington (CNN) Special counsel Robert Mueller's investigation into Russian interference in the 2016 presidential election is "close to being completed," acting Attorney General Matt Whitaker said Monday. Whitaker told reporters he has been "fully briefed" o… [+2493 chars]`,          
         publishedAt: "2019-01-28T23:04:00Z"
     },
 
@@ -104,24 +104,21 @@ var quote_list = [
     }
   ];
 
-
-
-
 // remove all records that match {} -- which means remove ALL records
-// db.Book.remove({}, function(err, books){
-//   if(err) {
-//     console.log('Error occurred in remove', err);
-//   } else {
-//     console.log('removed all books');
+db.Quote.remove({}, function(err, quotes){
+  if(err) {
+    console.log('Error occurred in remove', err);
+  } else {
+    console.log('removed all quotes');
 
-//     // create new records based on the array books_list
-//     db.Book.create(books_list, function(err, books){
-//       if (err) { return console.log('err', err); }
-//       console.log("created", books.length, "books");
-//       process.exit();
-//     });
-//   }
-// });
+    // create new records based on the array books_list
+    db.Quote.create(quote_list, function(err, quotes){
+      if (err) { return console.log('err', err); }
+      console.log("created", quotes.length, "quotes");
+      process.exit();
+    });
+  }
+});
 
 // db.Author.deleteMany({}, function(err, authors) {
 //   console.log('removed all authors');
