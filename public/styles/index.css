@@ -1,25 +1,28 @@
 .header {
-  background-color: skyblue;
-  padding-top: 20px;
+  padding-top: 15px;
   text-align: center;
-  height: 100px;
+  height: 60px;
 }
 
 .main {
   background-image: url("https://images.pexels.com/photos/1020317/pexels-photo-1020317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  text-align: center;
 }
 
 .show {
   /* display: none; */
 }
 
+.sign-in-up {
+  text-align: center;
+}
+
 form {
-  width: 50%;
+  /* width: 50%; */
+  width: 400px;
   line-height: 1.68em;
   text-align: center;
   padding: 2em;
-  background-color: lightblue;
+  background-color: green;
   border: 1px solid black;
   border-radius: 20px;
 }
