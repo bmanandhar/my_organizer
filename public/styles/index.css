@@ -6,6 +6,7 @@
 
 .main {
   background-image: url("https://images.pexels.com/photos/1020317/pexels-photo-1020317.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  text-align: center;
 }
 
 .show {
@@ -16,13 +17,17 @@
   text-align: center;
 }
 
+.one {
+  text-align: center;
+}
+
 form {
   /* width: 50%; */
   width: 400px;
   line-height: 1.68em;
   text-align: center;
   padding: 2em;
-  background-color: green;
+  background-color: skyblue;
   border: 1px solid black;
   border-radius: 20px;
 }
