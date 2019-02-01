@@ -1,14 +1,14 @@
-.top {
-  position: fixed;
-  height: 95px;
-  top: 0; 
-  width: 86.5%;
-}
-
-
 body {
   text-align: center;
 }
+
+.top {
+  /* position: fixed; */
+  height: 90px;
+  /* top: 0;  */
+  /* width: 88.8%; */
+}
+
 
 /* .top {
   position: fixed;
@@ -18,7 +18,7 @@ body {
 
 .container {
   /* margin: 1px; */
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 }
 
 .share {

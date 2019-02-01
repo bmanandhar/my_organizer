@@ -1,7 +1,28 @@
 
 $(document).ready(function(){
-    getQuote();
     var quote;
+
+    getQuote();
+
+    $.ajax({
+        method: "GET",
+        url: `/quote/${localStorage.userId}`,
+        dataType: `json`,
+        
+        success: (response) => {
+            response.forEach(quote => {
+                $(".save-data").append(`
+                <div>
+                <h5>Quote: ${quote.quote}<//h5>
+                <h5>Author: ${quote.author}</h5>
+                <button id="delete-quote" class="btn btn-danger delete-data" quote-id=${quote._id}>Delete</button>
+                </div>`)
+            }) 
+        },
+            
+        // error: handleError
+    });
+
     //Function declaration  
     function getQuote(){
       var url= "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
@@ -18,64 +39,46 @@ $(document).ready(function(){
         }
         $(".quote").html('"'+quote+'"');
         $(".author").html("-"+author);
-        console.log('"'+link+'"');
-        console.log('"'+quote+'"');
-        console.log("-"+author);
+        // console.log('"'+link+'"');
+        // console.log('"'+quote+'"');
+        // console.log("-"+author);
       });
     };
-$(".save-quote").on("click", function() {
-    // POST request
-    console.log(quote)
-    $.ajax({
-        method: "POST",
-        url: "/quote",
-        data: {
-            quote: quote,
-            author: author,
-            link: link, 
-            user: localStorage.userId
-        },
-        success: (response) => console.log(response),
-        // error: handleError
-    });
+
+    $(".save-quote").on("click", function() {
+        // POST request
+        console.log(quote)
+        $.ajax({
+            method: "POST",
+            url: "/quote",
+            data: {
+                quote: quote,
+                author: author,
+                link: link, 
+                user: localStorage.userId
+            },
+            success: (response) => console.log(response),
+            
+            // error: handleError
+        });
 
     
-})
+    })
 
-$.ajax({
-    method: "GET",
-    url: `/quote/${localStorage.userId}`,
-    dataType: `json`,
-    
-    success: (response) => {
-        console.log(response)
-        response.forEach(quote => {
-            $(".save-data").append(`
-            <h5>Quote: ${quote.quote}<//h5>
-            <h5>Author: ${quote.author}</h5>
-            <p class="delete-data"><button class="btn btn-danger save-quote">Delete quote</button></p>
-        `)
-        }) 
-        },
-        
-    // error: handleError
-});
+    $(".save-data").on("click", 'button' ,function() {
+        // POST request
+        let quoteId = $(this).attr('quote-id');
 
-// $(".delete-quote").on("click", function() {
-//     // POST request
-//     $.ajax({
-//         method: "DELETE",
-//         url: `/quote/${localStorage.userId}`,
-//         data: {
-//             quote: quote,
-//             author: author,
-//             link: link, 
-//             user: localStorage.userId
-//         },
-//         success: (response) => console.log(response),
-//         // error: handleError
-//     });
-// })
+        $.ajax({
+            method: "DELETE",
+            url: `/quote/${quoteId}`,
+            success: (response) => {
+                console.log(response);
+                location.reload();
+            }
+            // error: handleError
+        });
+    })
 
      $(".tweet").on("click", function(){
         window.open(`https://twitter.com/intent/tweet?text=${quote} - ${author}`);
