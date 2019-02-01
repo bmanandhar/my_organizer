@@ -75,36 +75,48 @@ function verifyToken(req, res, next) {
   }
 }
 
-//API Quotes
-// server.js
-// app.get('/api/quote', function (req, res) {
-//   // send all books as JSON response
-//   db.Quote.find(function(err, quotes){
-//     if (err) {
-//       console.log("index error: " + err);
-//       res.sendStatus(500);
-//     }
-//     res.json(quotes);
-//   });
-// });
-
-// app.get("/", (req, res) => {
-//   res.send("Hello World");
-// });
-
-// app.use("/", (req, res) => {
-//   res.sendFile(__dirname + "/home.html");
-// });
-
 app.post("/quote", (req, res) => {
-  db.Quote.create(req.body, (err,newQuote)=>{
+  let quote = req.body
+  console.log(quote);
+  db.Quote.create(quote, (err,newQuote)=>{
+    console.log(newQuote);
     if(err){
       res.json(err)
     }
-    res.json({newQuote:newQuote})
+    res.json({newQuote})
   })
 });
 
+app.get("/quote/:id", (req, res) => {
+  db.Quote.find({user: req.params.id}).exec((err,quotes)=>{
+    console.log(quotes);
+    if(err){
+      res.json(err)
+    }
+    res.json(quotes)
+  })
+});
+////
+app.delete("/quote/:id", (req, res) => {
+  db.Quote.remove({_id: req.params.id}).exec((err, quotes) => {
+    if(err){
+      res.json(err)
+    }
+    res.json(quotes)
+  })
+});
+////
+// delete food //
+app.delete('/api/foods/:id', (req, res) => {
+  let foodId = req.params.id;
+  db.Food.deleteOne(
+      { _id: foodId },
+      (err, deletedFood) => {
+          if(err) { return console.log(err) }
+          res.json(deletedFood);
+  });
+});
+////
 
 app.listen(port, () => console.log(`Server listening on port ${port}!`)) //port=3000
 

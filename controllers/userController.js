@@ -33,7 +33,7 @@ module.exports = {
                       
                     // if(err){ return res.status(500).json({err})}
                     // we send our new data back to user or whatever you want to do.
-                  result = result[0]
+                  result = result
                   jwt.sign(
                       {result},
                       "waffles",

@@ -1,102 +1,56 @@
+.top {
+  position: fixed;
+  height: 95px;
+  top: 0; 
+  width: 86.5%;
+}
+
+
 body {
-  margin: 1px;
-  padding: 1px;
   text-align: center;
 }
 
+/* .top {
+  position: fixed;
+  top: 0; 
+  width: 100%;
+  } */
+
 .container {
-  background-color:;
-  margin: 1px;
+  /* margin: 1px; */
   border: 1px solid yellow;
 }
 
-.top {
-  height: 100px;
-  background-color: lightgreen;
+.share {
+  float: right;
 }
-.main {
-  background-color: skyblue;
-}
-  
-h5 {
+
+h3 {
   color: cornsilk;
   font-style: oblique;
 }
 
-/* .sign-up-form {
-  display:flex;
-  flex-direction:column;
-  text-align: right;
-  width: 350px;
-  height: 160px;
-  background-color: green;
-  border-color: red;
-  border-style: solid;
-  border-radius: 2px;
-  margin-top: 5px; 
-  padding: 2px;
-  color: #80bfff;
-  display: none;
-} */
-
-/* .sign-in-form {
-  display:flex;
-  flex-direction:column;
-  text-align: right;
-  width: 350px;
-  height: 160px;
-  background-color: green;
-  border-color: red;
-  border-style: solid;
-  border-radius: 2px;
-  margin-top: 5px; 
-  padding: 2px;
-  color: #80bfff;
-  display: none;
-} */
-
-/* .clearfix {
-  display: flex;
-  flex-direction: row-reverse;
-} */
-
-/* .signIn{
-  display:flex;
-  flex-direction:column-reverse;
-  text-align: center;
-  width: 350px;
-  height: 160px;
-  background-color: green;
-  border-color: red;
-  border-style: solid;
-  border-radius: 2px;
-  margin-top: 5px; 
-  padding: 2px;
-  color: #80bfff;
-} */
-
 .quote-box {
   display:flex;
   flex-direction:column-reverse;
-  /* width: 400px; */
-  height: 160px;
-  border-color: red;
-  border-style: solid;
   border-radius: 2px;
-  margin-top: 5px; 
-  padding: 2px;
-  /* color: #80bfff; */
+  margin: 10px 0; 
 }
 
 .quote {
   font-family: Times New Roman;
   font-size: 20px;
+  cursor: pointer;
 } 
 
 .author {
-  color: #8db618;
+  color: blue;
   font-style: italic;
-  /* font-size: 15px; */
+  font-size: 15px;
+}
+
+.save-btns {
+  float: left;
 }
   
 .post {
@@ -119,16 +73,21 @@ h5 {
 }
 
 .phone {
-  background-color: #FFFFFF;
+  background-color: goldenrod;
 }
 .transit {
-  background-color: #FFFF74;
+  background-color: hotpink;
 }
   
 .weather {
-    background-color: grey;
+    background-color: lightyellow;
 }
 
 .ipinfo {
-  background-color: purple;
+  background-color: burlywood;
+}
+
+.save-data {
+  background-color: lightblue;
+  border: 1px solid red;
 }

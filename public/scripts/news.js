@@ -14,12 +14,14 @@ $(document).ready(function(){
 
         for (let i=0; i<length; i++) {
             $('.news-content').append(` 
-                <p><b>News# ${i+1}</b></p>
-                <p>Date published: ${all_news[i].publishedAt}</p>
-                <p>Source: ${all_news[i].source.name}</P>
-                <p>Content: ${all_news[i].content}</p>
-                <button class="btn btn-primary save-news${i}">save-${i}</button>
-                <p>- - - - - - -</p>`
+                <div>
+                    <p><b>News# ${i+1}</b></p>
+                    <p>Date published: ${all_news[i].publishedAt}</p>
+                    <p>Source: ${all_news[i].source.name}</P>
+                    <p>Content: ${all_news[i].content}</p>
+                    <button class="btn btn-primary news-btn save-news${i}">save-${i}</button>
+                    <hr>
+                </div>`
             )
         }
     })
