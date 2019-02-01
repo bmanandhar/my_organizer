@@ -3,7 +3,7 @@ localStorage.length > 0 ? console.log(localStorage) : console.log('no local stor
 let loggedIn ;
 let user ;
 
-// checkForLogin();
+//checkForLogin();
 
 $('a#logout').on('click', handleLogout);
 
@@ -17,7 +17,7 @@ $('#loginForm').on('submit', submitLogin)
 
 
 function checkForLogin(){
-  if(localStorage.length > 0){
+  if(localStorage.token){
     let jwt = localStorage.token
 
     $.ajax({
@@ -32,13 +32,14 @@ function checkForLogin(){
       localStorage.userId = user._id;
       console.log("you can access variable user: " , user)
         $('#message').text(`Welcome, ${ response.email || response.result.email } `);
-        window.location.href = "http://localhost:3000/home.html";
+        window.location.href = "http://localhost:3000/home";
     }).fail(function (err) {
         console.log(err);
     });
     $('#yesToken').toggleClass('show');
   } else {
     $('#noToken').toggleClass('show');
+    window.location.href = "http://localhost:3000/";
   }
 }
 
@@ -46,6 +47,7 @@ function handleLogout(e) {
   e.preventDefault();
   console.log("LOGGED OUT")
   delete localStorage.token;
+  delete localStorage.userId;
   $('#yesToken').toggleClass('show');
   $('#message').text('Goodbye!')
   user = null;
@@ -94,6 +96,7 @@ function submitLogin(e){
   console.log("LOGIN FORM SUBMITTED")
   let userData = $(this).serialize()
   console.log("LOGIN: ", userData)
+
   $.ajax({
     method: "POST",
     url: "/user/login",

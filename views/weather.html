@@ -18,7 +18,7 @@
     <div class="container">
         <!--Below this line is header-->
         <div class="col-md-12 bg-primary top">
-            <h1>Organizer</h1>    
+            <h3>Organizer</h3>    
             <div class="text-center share">
                 <a href="home.html">
                     <button class="btn btn-sm">Home</button>
@@ -28,9 +28,10 @@
                 </a>
                 <a href="map.html">
                     <button class="btn btn-sm map" type="submit" id="map">Map</button>
-                </a><script src="scripts/index.js" type="text/javascript"></script>
-                    <button href="#" class="btn btn-sm phone" type="submit" id="phone">Phone</button> 
-                    <button href="#" class="btn btn-sm transit" type="submit" id="transit">Transit</button>
+                </a>
+                <script src="scripts/index.js" type="text/javascript"></script>
+                <button href="#" class="btn btn-sm phone" type="submit" id="phone">Phone</button> 
+                <button href="#" class="btn btn-sm transit" type="submit" id="transit">Transit</button>
                 <a href="weather.html">
                     <button class="btn btn-sm weather" type="submit" id="weather">Weather</button>
                 </a>
@@ -42,14 +43,15 @@
                 </div>
             </div>        
         </div>
-<!--above this line is header-->
+        <!--Above this line is the header-->
         <div class="weather-report">
+            <div class="data">
             <p><a href="#" class="btn btn-default cf-btn"id="toggle">C/F</a></p>
             <p class="city">City name...</p>
             <p class="region-country"></p>
             <p class="temp">C/F</p>
-        </div>
-        <div class="weather-report">
+        <!-- </div> -->
+        <!-- <div class="weather-report"> -->
             <p class="max"></p>
             <p class="min"></p>
             <p class="weather"></p>
@@ -58,6 +60,7 @@
             <p class="wind-speed"></p>
             <p class="wind-dir"></p>
             <p class="time"></p>
+            </div>
         </div>
     </div>
     <script src="scripts/weather.js" type="text/javascript"></script> 

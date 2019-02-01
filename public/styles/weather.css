@@ -16,9 +16,13 @@
   } */
   .weather-report {
     background-color: burlywood;
+    /* text-align: center; */
   }
 
-
+  .data {
+    /* width: 500px; */
+    /* text-align: left; */
+  }
   .cf-btn {
     float: left;
     background-color: green;

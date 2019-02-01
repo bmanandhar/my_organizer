@@ -17,13 +17,13 @@
 .news-content {
     margin: 1px;
     border: 1px solid green;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     background-color: lightyellow;
 }
 
-.news-btn {
+/* .news-btn {
   float: left;
-}
+} */
 
 hr { 
   display: block;
