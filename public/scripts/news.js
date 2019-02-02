@@ -1,6 +1,6 @@
 $(document).ready(function(){
     const url = 'https://newsapi.org/v2/top-headlines?'+
-                'country=us&'+
+                'country=in&'+
                 'apiKey=307652aa8aa44bf0869e6147a272b466';
     const req = new Request(url);
     fetch(url)
