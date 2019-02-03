@@ -5,6 +5,8 @@ $(document).ready(function(){
     var imperial = `https://api.openweathermap.org/data/2.5/weather?units=imperial&lat=`;
     var metric = `http://api.openweathermap.org/data/2.5/weather?units=metric&lat=`;
     var celsius = false;
+    var dt = new Date();
+    var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
     function result(fahrenheit, celsius){
         if(celsius) return Math.round(((fahrenheit - 32) * (5/9)) * 10) / 10 + "&deg" + "C";
         return Math.round(fahrenheit * 10) / 10 + "&deg" + "F";
@@ -18,15 +20,17 @@ $(document).ready(function(){
       
         $(".city").html(city); 
         $(".region-country").html(region + ", " + country);  
-        $(".temp").html(temp);
-        $(".weather").html(data.weather[0].description);
+
+        $(".temp").html("Temp: " + temp);
+        $(".weather").html("Main: " + data.weather[0].description);
         $(".max").html("Max temp: " + max);
         $(".min").html("Min temp: " + min);
         $(".humidity").html("Humidity: " + data.main.humidity + "%");
         $(".pressure").html("Pressure: " + data.main.pressure + "hPa");
         $(".wind-speed").html("Wind speed: " + data.wind.speed + "mile/hr");
         $(".wind-dir").html("Wind direction: " + data.wind.deg + "&#176");
-        $(".temp").prepend("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
+        $(".temp").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
+        $(".time").html("Time: " + time);
     }
 
     $(function(){

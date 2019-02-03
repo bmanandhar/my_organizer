@@ -1,40 +1,91 @@
-body {
-  text-align: center;
-}
-
 .top {
-  /* position: fixed; */
-  height: 90px;
-  /* top: 0;  */
-  /* width: 88.8%; */
+  height: 40px;
+  text-align: center;
+} 
+
+.news{
+  background-color: #34B3E8;
+}
+
+.map {
+  background-color: lightblue;
+}
+
+.phone {
+  background-color: goldenrod;
+}
+.transit {
+  background-color: hotpink;
+}
+  
+.weather {
+    font-weight: bold;
+}
+
+.ipinfo {
+  background-color: cornsilk;
 }
 
 
-/* .top {
-  position: fixed;
-  top: 0; 
-  width: 100%;
-  } */
-
-.container {
-  /* margin: 1px; */
-  /* border: 1px solid yellow; */
-}
-
-.share {
-  float: right;
-}
-
-h3 {
-  color: cornsilk;
-  font-style: oblique;
+.left {
+  background-color: cadetblue;
+  height: 575px;
+  overflow: scroll;
 }
 
 .quote-box {
-  display:flex;
-  flex-direction:column-reverse;
-  border-radius: 2px;
-  margin: 10px 0; 
+  display: flex;
+  flex-direction: column-reverse;
+  height: 35vh;
+  background-color: lightyellow;
+  margin: 2% 0 2% 0;
+}
+
+.quote-and-author {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 2% 0 2%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.saved {
+  background-color:  lightblue;
+  border: 1px solid lemonchiffon;
+}
+
+.save-data {
+  padding-left: 20px;
+  background-color: lightblue;
+  border: 1px solid lemonchiffon;
+}
+
+.right {
+  height: 575px;
+  background-color: lightgrey;
+  overflow: scroll;
+}
+
+.weather-report {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; 
+} 
+
+.cf-btn {
+  background-color: lemonchiffon;
+}
+
+h4 {
+  font-style: oblique;
 }
 
 .quote {
@@ -44,9 +95,10 @@ h3 {
 } 
 
 .author {
-  color: blue;
+  color: lightcoral;
   font-style: italic;
   font-size: 15px;
+  padding-bottom: 40px;
 }
 
 .save-btns {
@@ -61,33 +113,15 @@ h3 {
 }
   
 .share {
-  text-align: left;
+  text-align: right;
 }
 
-.news{
-  background-color: #34B3E8;
+footer {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  height: 50px;
+  background-color: lightsteelblue;
+  padding-top: 10px;
 }
 
-.map {
-  background-color: #E41616;
-}
-
-.phone {
-  background-color: goldenrod;
-}
-.transit {
-  background-color: hotpink;
-}
-  
-.weather {
-    background-color: lightyellow;
-}
-
-.ipinfo {
-  background-color: burlywood;
-}
-
-.save-data {
-  background-color: lightblue;
-  border: 1px solid red;
-}

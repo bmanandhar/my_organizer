@@ -13,57 +13,112 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="scripts/app.js" defer></script>
     <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <!-- <link rel="stylesheet" href="styles/index.css"> -->
 </head>
 <body>
     <div class="container">
         <!--Below this line is the header-->
-        <div class="col-md-12 bg-primary top">
-            <h3>Organizer</h3>    
-            <div class="text-center share">
-                <a href="home.html">
-                    <button class="btn btn-info btn-sm">Home</button>
-                </a>
-                <a href="news.html">
-                    <button href="#" class="btn btn-sm news" type="submit" id="news">News</button> 
-                </a>
-                <a href="map.html">
-                    <button class="btn btn-sm map" type="submit" id="map">Map</button>
-                </a>
-                <script src="scripts/index.js" type="text/javascript"></script>
-                <button href="#" class="btn btn-sm phone" type="submit" id="phone">Phone</button> 
-                <button href="#" class="btn btn-sm transit" type="submit" id="transit">Transit</button>
-                <a href="weather.html">
-                    <button class="btn btn-sm weather" type="submit" id="weather">Weather</button>
-                </a>
-                <a href="ipinfo.html">
-                    <button class="btn btn-sm ipinfo" type="submit" id="ipinfo">IP Info</button>
-                </a>
-                <div id="yesToken" class="show">
+        <div class="row">
+            <div class="col-md-12 bg-primary top">
+                <h4>Organizer</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 bg-primary top">
+                <div class="buttons">
+                    <a href="home.html">
+                        <button class="btn btn-info btn-sm">Home</button>
+                    </a>
+                    <a href="news.html">
+                        <button href="#" class="btn btn-sm news" type="submit" id="news">News</button> 
+                    </a>
+                    <a href="map.html">
+                        <button class="btn btn-sm map" type="submit" id="map">Map</button>
+                    </a>
+                        <!-- <script src="scripts/index.js" type="text/javascript"></script> -->
+                        <!-- <button href="#" class="btn btn-sm phone" type="submit" id="phone">Phone</button>  -->
+                        <!-- <button href="#" class="btn btn-sm transit" type="submit" id="transit">Transit</button> -->
+                        <!-- <a href="weather.html">
+                            <button class="btn btn-sm weather" type="submit" id="weather">Weather</button>
+                        </a> -->
+                    <a href="ipinfo.html">
+                        <button class="btn btn-sm ipinfo" type="submit" id="ipinfo">IP Info</button>
+                    </a>
+                        <!--This is newly to be removed-->
+                    <a href="ipinfo.html">
+                        <button class="btn btn-sm ipinfo" type="submit" id="ipinfo">Logout</button>
+                    </a>
+                <!-- <div id="yesToken" class="show">
                     <a id="logout" href="#"><button>Log Out</button></a>
-                </div>
-            </div>        
+                </div> -->
+                </div>        
+            </div>
         </div>
         <!--Above this line is the header-->
-        <div class="col-md-12 main">
-            <div class="quote-box">
-                <div class="post">
-                    <span>{Click for new quote}</span>
-                    <span style="color:blue">Post quote to:</span>
-                    <button href="#" class="btn btn-sm bg-primary facebook">Fbook</button>
-                    <button href="#" class="btn btn-sm bg-warning tweet">Tweet</button> 
-                </div>
-                <div class="quotes">
-                    <span class="quote" method="post" action="/quote"></span><br/>
-                    <span class="author" method="post" action="/author"></span>
-                    <span class="save-btns">
-                        <button class="btn btn-sm save-quote">save quote</button>
-                    <span>
-                </div>
-            </div> 
+        <div class="row">
+            <div class="col-md-6 col-sm-12 left">
+                <div class="quote-box">
+                    <div class="buttons">
+                        <button class="btn btn-sm bg-danger save-quote">save</button>
+                        <button href="#" class="btn btn-sm bg-warning facebook">Fbook</button>
+                        <button href="#" class="btn btn-sm bg-success tweet">Tweet</button> 
+                    </div>
+                    <div class="quote-and-author">
+                        <span class="quote" method="post" action="/quote">Quote here</span><br/>
+                        <span class="author" method="post" action="/author">Author here</span>
+                    </div>            
+                </div>  
+                <div class="save-div"> 
+                    <div class="saved">
+                        <h5>Saved quotations:</h5>
+                    </div>        
+                    <div class="save-data">
+                    </div> 
+            </div>
         </div>
-        <div class="save-data">
+        <!--Weather data-->
+        <div class="col-md-6 col-sm-12 right">
+            <div class="weather-report">
+                <div class="data">
+                    <h3>Current Weather</h3>
+                    <div class="loc">
+                        <p class="city">City name...</p>
+                        <p class="region-country"></p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="temp">C/F</p>
+                        <!-- </div> -->
+                        <!-- <div class="weather-report"> -->
+                        <p class="max"></p>
+                    </div>
+                    <div class="temperature">
+                        <p class="min"></p>
+                        <p><a href="#" class="btn btn-xs cf-btn"id="toggle">c/f</a></p>
+                    </div>
+                    <div>
+                        <p class="weather"></p>
+                        <p class="humidity"></p>
+                        <p class="pressure"></p>
+                        <p class="wind-speed"></p>
+                        <p class="wind-dir"></p>
+                        <p class="time"></p>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>   
+    </div>
+        <div class="row">
+            <div class="col-md-12">
+                <footer>
+                    <p><i>Bijaya Manandhar</i></p>
+                    <p>General Assembly, San Francisco,<b>WDI-49</b></p>
+                    <p><a href="mailto:someone@example.com">someone@example.com</a>.</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/index.js" type="text/javascript"></script>
+    <script src="scripts/weather.js" type="text/javascript"></script>     
 </body>
 </html>

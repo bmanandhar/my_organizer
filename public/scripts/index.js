@@ -13,10 +13,11 @@ $(document).ready(function(){
             response.forEach(quote => {
                 $(".save-data").append(`
                 <div>
-                <h5>Quote: ${quote.quote}<//h5>
+                <h5>${quote.quote}<//h5>
                 <h5>Author: ${quote.author}</h5>
                 <button id="delete-quote" class="btn btn-danger delete-data" quote-id=${quote._id}>Delete</button>
-                </div>`)
+                </div>
+                <hr>`)
             }) 
         },
             
