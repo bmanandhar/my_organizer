@@ -123,7 +123,8 @@ app.delete('/api/foods/:id', (req, res) => {
 });
 ////
 
-app.listen(port, () => console.log(`Server listening on port ${port}!`)) //port=3000
+app.listen(port)
+// app.listen(port, () => console.log(`Server listening on port ${port}!`)) //port=3000
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
