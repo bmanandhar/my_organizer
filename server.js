@@ -24,6 +24,10 @@ app.get('/home', (req, res) => {
   res.sendFile(__dirname + '/views/home.html');
 })
 
+app.get('/home', (req, res) => {
+  res.sendFile(__dirname + '/views/news.html');
+})
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/views/ipinfo.html');
 })

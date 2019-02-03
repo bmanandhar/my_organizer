@@ -1,9 +1,7 @@
-
 $(document).ready(function(){
     var quote;
-
     getQuote();
-
+    //GET request from database API to render data
     $.ajax({
         method: "GET",
         url: `/quote/${localStorage.userId}`,
@@ -15,12 +13,11 @@ $(document).ready(function(){
                 <div>
                 <h5>${quote.quote}<//h5>
                 <h5>Author: ${quote.author}</h5>
-                <button id="delete-quote" class="btn btn-danger delete-data" quote-id=${quote._id}>Delete</button>
+                <button id="delete-quote" class="btn btn-info delete-data" quote-id=${quote._id}>Delete</button>
                 </div>
                 <hr>`)
             }) 
-        },
-            
+        },    
         // error: handleError
     });
 
@@ -62,14 +59,11 @@ $(document).ready(function(){
             
             // error: handleError
         });
-
-    
     })
-
     $(".save-data").on("click", 'button' ,function() {
         // POST request
         let quoteId = $(this).attr('quote-id');
-
+        //Delete method
         $.ajax({
             method: "DELETE",
             url: `/quote/${quoteId}`,
@@ -80,13 +74,14 @@ $(document).ready(function(){
             // error: handleError
         });
     })
-
+    //Posting data straight to tweeter
      $(".tweet").on("click", function(){
         window.open(`https://twitter.com/intent/tweet?text=${quote} - ${author}`);
         });
-        $(".facebook").on("click", function(){
-          window.open("https://www.facebook.com/sharer/sharer.php?u="+ link);
-      });
+    //Posting data straight to facebook
+    $(".facebook").on("click", function(){
+        window.open("https://www.facebook.com/sharer/sharer.php?u="+ link);
+    });
       $(".quote").on("click", function(){   
           getQuote();
       })

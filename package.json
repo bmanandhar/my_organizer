@@ -25,5 +25,8 @@
     "url": "https://github.com/bmanandhar/my_organizer/issues"
   },
   "homepage": "https://github.com/bmanandhar/my_organizer#readme",
-  "description": "https://forismatic.com/en/api/ https://api.openweathermap.org https://newsapi.org/ https://ipinfo.io/json"
+  "description": "https://forismatic.com/en/api/ https://api.openweathermap.org https://newsapi.org/ https://ipinfo.io/json",
+  "scripts": {
+    "start": "node server.js"
+  }
 }
