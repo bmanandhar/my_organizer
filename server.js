@@ -5,7 +5,8 @@ const userRoutes = require('./routes/user')
 const jwt = require('jsonwebtoken')
 const db = require('./models')
 
-const port = 3000;
+const port = process.env.port || 3000
+
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -135,5 +136,3 @@ app.get('/', (req,res) => {
 });
 
 app.use('/user', userRoutes);
-
-// app.listen(port, () => console.log(`Example app listening on port ${port}!`))
