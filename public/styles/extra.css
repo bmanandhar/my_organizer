@@ -28,17 +28,7 @@ form {
   line-height: 1.68em;
   text-align: center;
   padding: 2em;
-  background-color: lightyellow;
+  background-color: skyblue;
   border: 1px solid black;
-  border-radius: 10px;
-}
-
-.sign-up-in-div {
-  padding: 27% 12%;
-}
-
-.request {
-  height: 100px;
-  width: 50%;
-  background-color: red;
+  border-radius: 20px;
 }
