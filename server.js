@@ -5,7 +5,7 @@ const userRoutes = require('./routes/user')
 const jwt = require('jsonwebtoken')
 const db = require('./models')
 
-const port = process.env.port || 3000
+const port = process.env.PORT || 3000
 
 
 // Middleware
