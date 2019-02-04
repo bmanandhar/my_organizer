@@ -21,28 +21,23 @@ $(document).ready(function(){
 
         //javaSript for loop rendering all news contents
         for (let i=0; i<length; i++) {
+            let 
+                news_to_display =  
+                `<div>
+                    <p><b>News# ${i+1}</b></p>
+                    <p>Date published: ${all_news[i].publishedAt}</p>
+                    <p>Source: ${all_news[i].source.name}</P>
+                    <p>Content: ${all_news[i].content}</p>
+                    <hr>
+                </div>`
             
             //`if else` statement for checking condition to render data to left & right columns  
             if (i%2===0){
-                $('.news-even').append(` 
-                    <div>
-                        <p><b>News# ${i+1}</b></p>
-                        <p>Date published: ${all_news[i].publishedAt}</p>
-                        <p>Source: ${all_news[i].source.name}</P>
-                        <p>Content: ${all_news[i].content}</p>
-                        <hr>
-                    </div>`
-                )
-                } else {
-                    $('.news-odd').append(` 
-                    <div>
-                        <p><b>News# ${i+1}</b></p>
-                        <p>Date published: ${all_news[i].publishedAt}</p>
-                        <p>Source: ${all_news[i].source.name}</P>
-                        <p>Content: ${all_news[i].content}</p>
-                        <hr>
-                    </div>`
-                )
+                $('.news-even').append(news_to_display)
+                }
+                else 
+                {
+                $('.news-odd').append(news_to_display)
             }
         }
     })
