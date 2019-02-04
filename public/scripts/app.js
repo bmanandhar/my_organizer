@@ -32,14 +32,14 @@ function checkForLogin(){
       localStorage.userId = user._id;
       console.log("you can access variable user: " , user)
         $('#message').text(`Welcome, ${ response.email || response.result.email } `);
-        window.location.href = "http://localhost:3000/home";
+        window.location.href = "/home";
     }).fail(function (err) {
         console.log(err);
     });
     $('#yesToken').toggleClass('show');
   } else {
     $('#noToken').toggleClass('show');
-    window.location.href = "http://localhost:3000/";
+    window.location.href = "/";
   }
 }
 
