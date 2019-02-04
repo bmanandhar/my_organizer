@@ -3,6 +3,10 @@
   text-align: center;
 } 
 
+.about{
+  background-color: aqua;
+}
+
 .news{
   background-color: #34B3E8;
 }
