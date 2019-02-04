@@ -53,12 +53,13 @@
   display: flex;
   justify-content: center;
   justify-content: space-around;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 }
 
 .saved {
   background-color:  lightblue;
   border: 1px solid lemonchiffon;
+  padding-left: 22px;
 }
 
 .save-data {
@@ -99,7 +100,7 @@ h4 {
   color: lightcoral;
   font-style: italic;
   font-size: 15px;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 .save-btns {
