@@ -32,7 +32,7 @@ __Home Page__
 <p>The saved data(quote) can be read in the future, or may be deleted if user wants.</p>
 
 __Weather__
-<p>Home page also provides the curent weather condition of the city. It includes current, minimum and maximum temperatures, atmosheric pressure, wind speed with direction, and local time of the city.</p>
+<p>Home page also provides the curent weather condition of the city. It includes current, minimum and maximum temperatures, atmosheric pressure, wind speed with direction, and local time of the city. Temperatures may be viewed either in Fahrenheit or Celsius by toggling a button.</p>
 
 __News__
 Navigating thru the Nav-bar, user can access to the news page, named 'News Room'. This page provides the latest world news that have been published by different news media of US. 
