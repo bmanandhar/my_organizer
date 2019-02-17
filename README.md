@@ -1,42 +1,55 @@
-https://forismatic.com/en/api/
-https://api.openweathermap.org
-https://newsapi.org/
-https://ipinfo.io/json
+## My Organiaer
 
-<!--
-bootstrap-4.2.1-dist
-CDN:-> 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<p>This web application is being created with the motivation of dfferent apps for reading news, to know weather condition and reading inspiring quotes from different famous people.</p>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
--->
-//
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<p>I had chosen this project as a requirement to complete the Web Developer Immersive programme at General Assembly, San Francisco that lasted from 10/29/2018 thru 02/05/2019</p>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+### Features
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+<p>Basically, it consists of <u>HTML</U>, <u>CSS</u>, <u>Bootstrap library</u>, and <u>javaScript</u> on the front end part. <u>JQuery</u> library has widely been used in dealing with the data pulled from different API libraries.</p>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
-</html>
-//
+<p>It uses <u>NodeJS</u> as runtime and <u>ExpressJS</u> as the framework. In addition, <u>Jsonwebtoken</u>, <u>Body-parser</u>, and</u><u> bcrypt</u> modules are used on its back end.</p>
 
-  const url = 'https://newsapi.org/v2/top-headlines?'+
-                'country=us&'+
-                'apiKey=307652aa8aa44bf0869e6147a272b466';
+### Sources of data
+<p>Mainly, three different API libraries are currently in use that provides data for:</p>
+
+1. Current weather of the city user is curently in.<br>
+[https://api.openweathermap.org]
+1. Randomly generated inspiring quotes delivered by famous persons of the world.<br>
+[https://forismatic.com/en/api/]
+1. Current world news from US bublished by different US sources.
+[https://newsapi.org/]
+1. Geo location of the city where  the user recieves live internet service from. Iy includes zip code and IP address as well.<br>
+[https://ipinfo.io/json] 
+
+### User Story
+__Sign-in__
+<p>User is promted to a sign-in and sign-up page. A new user then can sign up by entering a valid email address and a password.</P>
+<p>The returning user can log in and use the web application.</p>
+
+__Home Page__
+<p>In opening the home page, the user will be greeted with inspiring quotes with the author name. It will show up 'Anonymous' if the author name is unkonwn. The quote window has three different buttons, one to save the quote and author name in the data base, one for posting the quote direct to Face book's post-section, the third button allows user to post the same direct to Tweeter.</p>
+<p>The saved data(quote) can be read in the future, or may be deleted if user wants.</p>
+
+__Weather__
+<p>Home page also provides the curent weather condition of the city. It includes current, minimum and maximum temperatures, atmosheric pressure, wind speed with direction, and local time of the city.</p>
+
+__News__
+Navigating thru the Nav-bar, user can access to the news page, named 'News Room'. This page provides the latest world news that have been published by different news media of US. 
+
+__Log Out__
+Using the logout button, user can get out of the website with the quote saved in the data base for the future.
+Hayward
+
+### Images 
+<p>Here are images of web application as displayed on the screen.</p>
+* [Random](public/images/quote.png)
+* [Weather](public/images/weather.png)
+* [News](public/images/news.png)
+
+## Future Feature
+
+<p>Weather app may be enhanced to get weather info of any city of the world.</p>
+
+<p>The news API used in this application may be manipulated for displaying news on the basis of catagory and country as required.</p>
+
