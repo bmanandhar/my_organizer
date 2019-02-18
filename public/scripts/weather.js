@@ -13,15 +13,16 @@ $(document).ready(function(){
     }
 
     function cityWeather(data, celsius){
-        console.log("Here is data",data);
+        console.log("Here is data", data);
         var temp = result(data.main.temp, celsius);
         var max = result(data.main.temp_max, celsius);
         var min = result(data.main.temp_min, celsius);
       
         // $(".city").html(city + ","); 
         // $(".region-country").html(region + ", " + country);  
+        $(".temp").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
 
-        $(".temp").html("Temp: " + temp);
+        // $(".temp").html("Current Temp: " + temp);
         $(".weather").html("Main: " + data.weather[0].description);
         $(".max").html("Max temp: " + max);
         $(".min").html("Min temp: " + min);
@@ -30,6 +31,9 @@ $(document).ready(function(){
         $(".wind-speed").html("Wind speed: " + data.wind.speed + "mile/hr");
         $(".wind-dir").html("Wind direction: " + data.wind.deg + "&#176");
         $(".temp").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
+        $(".max").html("Max temp: " + max);
+        $(".min").html("Min temp: " + min);
+        $(".temp").html("Current Temp: " + temp);
         $(".time").html("Time: " + time);
     }
 
