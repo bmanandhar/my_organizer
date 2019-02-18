@@ -21,7 +21,7 @@ function getIpInfo(){
       $(".city").html(`City: ${city}`);
       $(".region").html(`Region: ${region}`);
       // $(".postal").html(`Zip: ${postal}`);
-      $(".country").html(`Country: ${country}`);
+      // $(".country").html(`Country: ${country}`);
       $(".ip").html(`IP Address: ${ip}`);
       $(".name").html(`Company: ${name}`);
       $(".lat").html(`Latitude: ${lat_long[0]}`);
