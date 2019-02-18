@@ -20,7 +20,7 @@ function getIpInfo(){
       console.log(lat_long);
       $(".city").html(`City: ${city}`);
       $(".region").html(`Region: ${region}`);
-      $(".postal").html(`Zip: ${postal}`);
+      // $(".postal").html(`Zip: ${postal}`);
       $(".country").html(`Country: ${country}`);
       $(".ip").html(`IP Address: ${ip}`);
       $(".name").html(`Company: ${name}`);
