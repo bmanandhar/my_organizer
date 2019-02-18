@@ -18,6 +18,7 @@ $(document).ready(function(){
         var temp = result(data.main.temp, celsius);
         var max = result(data.main.temp_max, celsius);
         var min = result(data.main.temp_min, celsius);
+        console.log(data.weather[0].icon);
       
         $(".temp").html("Current Temp: " + temp);
         $(".weather").html("Main: " + data.weather[0].description);
