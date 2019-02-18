@@ -57,6 +57,8 @@ $(document).ready(function(){
             })
         })    
     })
+    $(".icon").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
+
     var now = new Date();
     // var nowArray = now.split("");
     console.log(now);
