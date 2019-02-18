@@ -33,6 +33,14 @@ $(document).ready(function(){
         $(".temp").html("Current Temp: " + temp);
         $(".time").html("Time: " + time);
     }
+    function toggleWeather(data, celsius){
+        var temp = result(data.main.temp, celsius);
+        var max = result(data.main.temp_max, celsius);
+        var min = result(data.main.temp_min, celsius);
+        $(".temp").html("Current Temp: " + temp);
+        $(".max").html("Max temp: " + max);
+        $(".min").html("Min temp: " + min);
+    };
 
     $(function(){
         $.getJSON(ipInfo, function(data){
@@ -46,7 +54,7 @@ $(document).ready(function(){
             cityWeather(data, celsius);
             $("#toggle").click(function(){
                 celsius = !celsius;
-                cityWeather(data, celsius);
+                toggleWeather(data, celsius);
                })
             })
         })    
