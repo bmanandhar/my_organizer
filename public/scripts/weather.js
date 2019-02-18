@@ -7,7 +7,7 @@ $(document).ready(function(){
     var celsius = false;
     var dt = new Date();
     var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
-    $(".icon").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
+    // $(".icon").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
 
     function result(fahrenheit, celsius){
         if(celsius) return Math.round(((fahrenheit - 32) * (5/9)) * 10) / 10 + "&deg" + "C";
