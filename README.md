@@ -43,6 +43,7 @@ Hayward
 
 ### Images 
 <p>Here are images of web application as displayed on the screen.</p>
+
 * [Random](public/images/quote.png)
 * [Weather](public/images/weather.png)
 * [News](public/images/news.png)
