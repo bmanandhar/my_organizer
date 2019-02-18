@@ -77,7 +77,7 @@ $(document).ready(function(){
         });
     //Posting data straight to facebook
     $(".facebook").on("click", function(){
-        window.open("https://www.facebook.com/sharer/sharer.php?u=");
+        window.open("https://www.facebook.com/sharer/sharer.php?u="+ quote + author + link);
     });
       $(".quote").on("click", function(){   
           getQuote();
