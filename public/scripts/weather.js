@@ -20,7 +20,6 @@ $(document).ready(function(){
         var min = result(data.main.temp_min, celsius);
         console.log(data.weather[0].icon);
       
-        $(".temp").html("Current Temp: " + temp);
         $(".weather").html("Main: " + data.weather[0].description);
         $(".max").html("Max temp: " + max);
         $(".min").html("Min temp: " + min);
@@ -28,7 +27,7 @@ $(document).ready(function(){
         $(".pressure").html("Pressure: " + data.main.pressure + "hPa");
         $(".wind-speed").html("Wind speed: " + data.wind.speed + "mile/hr");
         $(".wind-dir").html("Wind direction: " + data.wind.deg + "&#176");
-        $(".icon").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
+        $(".temp").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
         $(".max").html("Max temp: " + max);
         $(".min").html("Min temp: " + min);
         $(".temp").html("Current Temp: " + temp);
