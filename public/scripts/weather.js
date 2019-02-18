@@ -3,7 +3,6 @@ $(document).ready(function(){
 //    var openWeatherMap; on Toggle, trying to replace data by metric units available on the api url,
     var ipInfo = `https://ipinfo.io`;
     var imperial = `https://api.openweathermap.org/data/2.5/weather?units=imperial&lat=`;
-    console.log(imperial);
     var metric = `http://api.openweathermap.org/data/2.5/weather?units=metric&lat=`;
     var celsius = false;
     var dt = new Date();
@@ -28,7 +27,7 @@ $(document).ready(function(){
         $(".pressure").html("Pressure: " + data.main.pressure + "hPa");
         $(".wind-speed").html("Wind speed: " + data.wind.speed + "mile/hr");
         $(".wind-dir").html("Wind direction: " + data.wind.deg + "&#176");
-        // $(".temp").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
+        $(".icon").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
         $(".max").html("Max temp: " + max);
         $(".min").html("Min temp: " + min);
         $(".temp").html("Current Temp: " + temp);
