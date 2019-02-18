@@ -20,7 +20,7 @@ $(document).ready(function(){
       
         // $(".city").html(city + ","); 
         // $(".region-country").html(region + ", " + country);  
-        $(".temp").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
+        $(".icon").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
 
         // $(".temp").html("Current Temp: " + temp);
         $(".weather").html("Main: " + data.weather[0].description);
