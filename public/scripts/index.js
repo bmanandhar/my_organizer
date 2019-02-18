@@ -37,9 +37,6 @@ $(document).ready(function(){
         }
         $(".quote").html('"'+quote+'"');
         $(".author").html("-"+author);
-        // console.log('"'+link+'"');
-        // console.log('"'+quote+'"');
-        // console.log("-"+author);
       });
     };
 
@@ -80,7 +77,7 @@ $(document).ready(function(){
         });
     //Posting data straight to facebook
     $(".facebook").on("click", function(){
-        window.open("https://www.facebook.com/sharer/sharer.php?u="+ link);
+        window.open(`https://www.facebook.com/sharer/sharer.php?u="${quote} - ${author}`);
     });
       $(".quote").on("click", function(){   
           getQuote();
