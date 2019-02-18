@@ -19,9 +19,6 @@ $(document).ready(function(){
         var max = result(data.main.temp_max, celsius);
         var min = result(data.main.temp_min, celsius);
       
-        // $(".city").html(city + ","); 
-        // $(".region-country").html(region + ", " + country);  
-        // $(".temp").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
         $(".temp").html("Current Temp: " + temp);
         $(".weather").html("Main: " + data.weather[0].description);
         $(".max").html("Max temp: " + max);
@@ -30,7 +27,7 @@ $(document).ready(function(){
         $(".pressure").html("Pressure: " + data.main.pressure + "hPa");
         $(".wind-speed").html("Wind speed: " + data.wind.speed + "mile/hr");
         $(".wind-dir").html("Wind direction: " + data.wind.deg + "&#176");
-        $(".temp").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
+        $(".icon").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
         $(".max").html("Max temp: " + max);
         $(".min").html("Min temp: " + min);
         $(".temp").html("Current Temp: " + temp);
