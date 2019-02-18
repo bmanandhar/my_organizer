@@ -7,7 +7,6 @@ $(document).ready(function(){
     var celsius = false;
     var dt = new Date();
     var time = dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds();
-    // $(".icon").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
 
     function result(fahrenheit, celsius){
         if(celsius) return Math.round(((fahrenheit - 32) * (5/9)) * 10) / 10 + "&deg" + "C";
@@ -22,9 +21,8 @@ $(document).ready(function(){
       
         // $(".city").html(city + ","); 
         // $(".region-country").html(region + ", " + country);  
-        // $(".icon").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
-
-        // $(".temp").html("Current Temp: " + temp);
+        $(".icon").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
+        $(".temp").html("Current Temp: " + temp);
         $(".weather").html("Main: " + data.weather[0].description);
         $(".max").html("Max temp: " + max);
         $(".min").html("Min temp: " + min);
@@ -38,11 +36,8 @@ $(document).ready(function(){
         $(".temp").html("Current Temp: " + temp);
         $(".time").html("Time: " + time);
     }
-    $(".icon").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
-
 
     $(function(){
-      
         $.getJSON(ipInfo, function(data){
             console.log("ipInfo =", data);
             loc = data.loc.split(",");
@@ -59,8 +54,6 @@ $(document).ready(function(){
             })
         })    
     })
-    // $(".icon").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
-
     var now = new Date();
     // var nowArray = now.split("");
     console.log(now);
