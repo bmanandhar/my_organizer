@@ -78,7 +78,7 @@
   overflow: scroll;
 }
 
-.weather-report {
+.weather-ip-report {
   display: flex;
   flex-direction: column;
   justify-content: center;
