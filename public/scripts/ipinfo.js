@@ -24,12 +24,3 @@ function getIpInfo(){
     }
   })
 }
-
-// var ipInfo = {loc: "37.7909,-122.4020", …}
-// city: "San Francisco"
-// country: "US"
-// ip: "38.140.30.202"
-// loc: "37.7909,-122.4020"
-// org: "AS174 Cogent Communications"
-// postal: "94104"
-// region: "California"}

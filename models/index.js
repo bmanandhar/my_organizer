@@ -1,17 +1,6 @@
 const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/organizer', { useNewUrlParser: true } );
 
-// models/index.js
-// require runs the code from the given file and returns its exports
-// const User = require('./user');
-// // NEW LINE:
-// exports.User = User;
-
-// module.exports.User = require('./user')
-
-// module.exports.Quote = require("./quote.js");
-// module.exports.Quote = require("./ipinfo.js");
-
 module.exports = {
   User: require('./user'),
   Quote: require("./quote.js"),

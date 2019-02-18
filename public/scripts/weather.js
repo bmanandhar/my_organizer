@@ -58,42 +58,4 @@ $(document).ready(function(){
     var timestamp = now.getTime()
     console.log(timestamp);
     console.log(typeof timestamp);
-
-    // console.log(Object.values(now));
-
-    //"Sun Jan 27 2019 20:55:49 GMT-0800 (Pacific Standard Time)"
-    
 });
-
-
-/*
-$.ajax({
-      method: 'GET',
-      url: 'http://api.openweathermap.org/data/2.5/weather?q=',
-      data: {
-        id: 123
-      },
-      success: function( response ) {
-        $('#temp').html('The temperature in Detroit is ' + response.temp);
-      },
-      error: function() {
-        alert('There was an error getting weather data.');
-      },
-      beforeSend: function () {
-        $('#page').append('Loading');
-      },
-      complete: function () {
-        $('#loading').remove();
-      }
-});
-*/
-
-/* var ipinfo
-city: "San Francisco"
-country: "US"
-ip: "38.140.30.202"
-loc: "37.7909,-122.4020"
-org: "AS174 Cogent Communications"
-postal: "94104"
-region: "California"
-*/

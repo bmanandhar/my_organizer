@@ -5,7 +5,7 @@ const ipinfoSchema = mongoose.Schema({
     city: String,
     region: String,
     user: {
-        type: Schema.Types.ObjectId,  //REFERENCING :D
+        type: Schema.Types.ObjectId,  
         ref: 'User'
       }
 })
