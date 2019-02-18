@@ -24,7 +24,6 @@ $(document).ready(function(){
     //Function declaration  
     function getQuote(){
       var url= "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
-        console.log("LENGTH", localStorage.length);
       //API call using Json GET method, instruction given
       $.getJSON(url, function(data){  
         quote = data.quoteText;
