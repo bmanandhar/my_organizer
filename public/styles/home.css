@@ -22,7 +22,7 @@
   background-color: hotpink;
 }
   
-.weather {
+.weather, .max, .min, .temp {
     font-weight: bold;
 }
 
