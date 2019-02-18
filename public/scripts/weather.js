@@ -18,8 +18,8 @@ $(document).ready(function(){
         var max = result(data.main.temp_max, celsius);
         var min = result(data.main.temp_min, celsius);
       
-        $(".city").html(city + ","); 
-        $(".region-country").html(region + ", " + country);  
+        // $(".city").html(city + ","); 
+        // $(".region-country").html(region + ", " + country);  
 
         $(".temp").html("Temp: " + temp);
         $(".weather").html("Main: " + data.weather[0].description);
