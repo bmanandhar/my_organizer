@@ -12,7 +12,7 @@ $(document).ready(function(){
         if(celsius) return Math.round(((fahrenheit - 32) * (5/9)) * 10) / 10 + "&deg" + "C";
         return Math.round(fahrenheit * 10) / 10 + "&deg" + "F";
     }
-    $(".icon").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
+    // $(".icon").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
 
 
     function cityWeather(data, celsius){
