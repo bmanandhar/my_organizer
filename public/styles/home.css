@@ -122,6 +122,11 @@ h4 {
   text-align: right;
 }
 
+.weather-header {
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+}
+
 .loc {
   display: flex;
 }
