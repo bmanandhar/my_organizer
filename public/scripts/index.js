@@ -80,7 +80,7 @@ $(document).ready(function(){
         });
     //Posting data straight to facebook
     $(".facebook").on("click", function(){
-        window.open("https://www.facebook.com/sharer/sharer.php?u="+ link);
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${link}`);
     });
       $(".quote").on("click", function(){   
           getQuote();
