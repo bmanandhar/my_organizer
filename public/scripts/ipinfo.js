@@ -23,10 +23,9 @@ function getIpInfo(){
       // $(".postal").html(`Zip: ${postal}`);
       // $(".country").html(`Country: ${country}`);
       $(".ip").html(`IP Address: ${ip}`);
-      $(".name").html(`Company: ${name}`);
+      $(".name").html(`Company: ${org}`);
       $(".lat").html(`Latitude: ${lat_long[0]}`);
       $(".long").html(`Longitude: ${lat_long[1]}`);
-      $(".time").html("Time: " + time);
     }
   })
 }

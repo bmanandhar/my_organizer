@@ -30,6 +30,7 @@ $(document).ready(function(){
         $(".wind-speed").html("Wind speed: " + data.wind.speed + "mile/hr");
         $(".wind-dir").html("Wind direction: " + data.wind.deg + "&#176");
         $(".temp").append("<img src='" + 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png' + "'>");
+        $(".time").html("Time: " + time);
     }
 
     $(function(){
