@@ -113,10 +113,3 @@ function submitLogin(e){
     console.log(e2);
   })
 }
-
-/*
-{
-	"email":"admin1276@admin.com",
-	"password":"testing!"
-}
-*/
