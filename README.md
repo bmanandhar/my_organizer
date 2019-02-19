@@ -37,11 +37,10 @@ __Weather__
 <p>Home page also provides the curent weather condition of the city. It includes current, minimum and maximum temperatures, atmosheric pressure, wind speed with direction, and local time of the city. Temperatures may be viewed either in Fahrenheit or Celsius by toggling a button.</p>
 
 __News__
-Navigating thru the Nav-bar, user can access to the news page, named 'News Room'. This page provides the latest world news that have been published by different news media of US. 
+<p>Navigating thru the Nav-bar, user can access to the news page, named 'News Room'. This page provides the latest world news that have been published by different news media of US.</p>
 
 __Log Out__
-Using the logout button, user can get out of the website with the quote saved in the data base for the future.
-Hayward
+<p>Using the logout button, user can get out of the website with the quote saved in the data base for the future.</p>
 
 ### Images 
 <p>Here are images of web application as displayed on the screen.</p>
