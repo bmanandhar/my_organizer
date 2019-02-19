@@ -27,7 +27,6 @@ function getIpInfo(){
       $(".postal").html(`Zip: ${postal}`);
       $(".country").html(`Country: ${country}`);
       $(".ip").html(`IP Address: ${ip}`);
-      $(".domain").html(`Domain: ${domain}`);
       $(".name").html(`Company: ${org}`);
       $(".lat").html(`Latitude: ${lat_long[0]}`);
       $(".long").html(`Longitude: ${lat_long[1]}`);
