@@ -3,12 +3,12 @@
   margin-top: 10px;
 }
   
-  .news-odd {
+  .left {
     background-color: lightgrey;
     border: 1px solid yellow;
   }
 
-  .news-even {
+  .right {
     background-color: lightcyan
     border: 1px solid yellow;
   }
