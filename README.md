@@ -4,7 +4,7 @@
 
 <p>This web application is being created with the motivation of dfferent apps for reading news, to know weather condition and reading inspiring quotes from different famous people.</p>
 
-<p>I had chosen this project as a requirement to complete the Web Developer Immersive programme at General Assembly, San Francisco that lasted from 10/29/2018 thru 02/05/2019</p>
+<p>This project is being created during the Web Developer Immersive programme at General Assembly, San Francisco that lasted from 10/29/2018 thru 02/05/2019</p>
 
 ### Features
 
@@ -34,7 +34,7 @@ __Home Page__
 <p>The saved data(quote) can be read in the future, or may be deleted if user wants.</p>
 
 __Weather__
-<p>Home page also provides the curent weather condition of the city. It includes current, minimum and maximum temperatures, atmosheric pressure, wind speed with direction, and local time of the city. Temperatures may be viewed either in Fahrenheit or Celsius by toggling a button.</p>
+<p>Home page also provides the curent weather condition of the city. By default, it displays current, minimum and maximum temperatures, atmosheric pressure, wind speed with direction, and local time of the city the user gets internet service from. Temperatures may be viewed either in Fahrenheit or Celsius by toggling a button.</p>
 
 __News__
 <p>Navigating thru the Nav-bar, user can access to the news page, named 'News Room'. This page provides the latest world news that have been published by different news media of US.</p>
