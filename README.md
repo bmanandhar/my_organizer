@@ -13,13 +13,13 @@
 ### Sources of data
 <p>Mainly, three different API libraries are currently in use that provides data for:</p>
 
-1. Current weather of the city user is curently in.<br>
-[https://api.openweathermap.org]
 1. Randomly generated inspiring quotes delivered by famous persons of the world.<br>
 [https://forismatic.com/en/api/]
+1. Current city weather.<br>
+[https://api.openweathermap.org]
 1. Current world news from US bublished by different US sources.
 [https://newsapi.org/]
-1. Geo location of the city where  the user recieves live internet service from. Iy includes zip code and IP address as well.<br>
+1. The weather data is tracked following the geo location the city where the user is recieving internet service from.<br>
 [https://ipinfo.io/json] 
 
 ### User Story
@@ -45,12 +45,18 @@ Hayward
 <p>Here are images of web application as displayed on the screen.</p>
 
 * [Random](public/images/quote.png)
-* [Weather](public/images/weather.png)
+* [Weather](public/images/weather_ip.png)
 * [News](public/images/news.png)
 
-## Future Feature
+### Future Feature
 
 <p>Weather app may be enhanced to get weather info of any city of the world.</p>
 
 <p>The news API used in this application may be manipulated for displaying news on the basis of catagory and country as required.</p>
 
+### Challenges</h3>
+                    
+* Login Authentication                      
+* Deployment to Heroku App
+* Server side coding
+                    
