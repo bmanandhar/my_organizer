@@ -60,4 +60,3 @@ __Log Out__
 * Login Authentication                      
 * Deployment to Heroku App
 * Server side coding
-                    
