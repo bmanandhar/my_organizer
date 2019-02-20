@@ -45,9 +45,14 @@ __Log Out__
 ### Images 
 <p>Here are images of web application as displayed on the screen.</p>
 
-* [Random](public/images/quote.png)
-* [Weather](public/images/weather_ip.png)
-* [News](public/images/news.png)
+* Random-quote
+<img src="public/images/quote.png" alt="Random Quote" width=400/> 
+
+* Weather and IP Info
+<img src="public/images/weather_ip.png" alt="Random Quote" width=400/> 
+
+* News
+<img src="public/images/news.png" alt="News" width=400/>
 
 ### Future Feature
 
